@@ -146,3 +146,13 @@ Config\App::$baseURL "localhost:8080/" is not a valid URL.
 #22 {main}
 in SYSTEMPATH\HTTP\SiteURI.php on line 199.
  1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-05 08:58:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "registros/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registros/footer.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('registros/footer', [], true)
+ 3 APPPATH\Controllers\ProdutoController.php(18): view('registros/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProdutoController->new()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdutoController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\Loja-virtual\\Loja-Virtual\\public\\index.php')

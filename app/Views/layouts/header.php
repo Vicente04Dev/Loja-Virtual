@@ -22,19 +22,22 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="/index.html">Principal</a>
+                            <a class="nav-link text-white" href="/">Principal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="/contato.html">Contato</a>
+                            <a class="nav-link text-white" href="/contato">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/novoproduto">Novo produto</a>
                         </li>
                     </ul>
                     <div class="align-self-end">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="/cadastro.html" class="nav-link text-white">Quero Me Cadastrar</a>
+                                <a href="/newuser" class="nav-link text-white">Quero Me Cadastrar</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/login.html" class="nav-link text-white">Entrar</a>
+                                <a href="/login" class="nav-link text-white">Entrar</a>
                             </li>
                             <li class="nav-item">
                                 <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0"
