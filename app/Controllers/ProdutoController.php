@@ -17,4 +17,8 @@ class ProdutoController extends BaseController
                 .view('registros/novoproduto')
                 .view('layouts/footer');
     }
+
+    public function create(){
+        return "<h1>Hello World!!</h1> Novo Produto";
+    }
 }

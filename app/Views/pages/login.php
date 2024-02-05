@@ -5,13 +5,13 @@
                         <h1>Identifique-se, por favor</h1>
 
                         <div class="form-floating mb-3">
-                            <input type="email" id="txtEmail" class="form-control" placeholder=" " autofocus>
-                            <label for="txtEmail">E-mail</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder=" " autofocus>
+                            <label for="email">E-mail</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="password" id="txtSenha" class="form-control" placeholder=" ">
-                            <label for="txtSenha">Senha</label>
+                            <input type="password" id="senha" name="senha" class="form-control" placeholder=" ">
+                            <label for="senha">Senha</label>
                         </div>
 
                         <div class="form-check mb-3">
@@ -19,11 +19,10 @@
                             <label for="chkLembrar" class="form-check-label">Lembrar de mim</label>
                         </div>
 
-                        <button type="button" onclick="window.location.href='/cliente_pedidos.html'"
-                            class="btn btn-lg btn-danger">Entrar</button>
+                        <button type="submit" class="btn btn-danger">Entrar</button>
 
                         <p class="mt-3">
-                            Ainda não é cadastrado? <a href="/cadastro.html" class="text-decoration-none text-danger">Clique aqui</a> para se cadastrar.
+                            Ainda não é cadastrado? <a href="/newuser" class="text-decoration-none text-danger">Clique aqui</a> para se cadastrar.
                         </p>
 
                         <p class="mt-3">

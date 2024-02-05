@@ -22,4 +22,8 @@ class UserController extends BaseController
                 .view('pages/login')
                 .view('layouts/footer');
     }
+
+    public function create(){
+        return "<h1>Hello World!!</h1> Novo Usuário";
+    }
 }
