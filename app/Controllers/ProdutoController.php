@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\ProdutoModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class ProdutoController extends BaseController
@@ -13,6 +14,7 @@ class ProdutoController extends BaseController
     }
 
     public function new(){
+        helper('form');
         return view('registros/novoproduto');
     }
 
@@ -21,7 +23,27 @@ class ProdutoController extends BaseController
 
         $data = $this->request->getPost(['nome', 'preco', 'estoque', 'imagem', 'descricao']);
 
-        return "<h1>Hello World!!</h1> Novo Produto";
+        if(!$this->validateData($data, [
+            'nome' => 'required|max_length[255]',
+            'preco' => 'required',
+            'estoque' => 'required',
+            'descricao' => 'required',
+        ])){
+            return $this->new();
+        }
+
+        $post = $this->validator->getValidated();
+        $model = model(ProdutoModel::class);
+
+        $model->save([
+            'nome' => $post['nome'],
+            'preco' => $post['preco'],
+            'estoque' => $post['estoque'],
+            'imagem' => 'teste',
+            'descricao' => $post['descricao']
+        ]);
+
+        return view('pages/sucesso', $data);
     }
 
     public function upload()

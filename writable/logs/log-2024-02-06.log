@@ -19,3 +19,51 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
  6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\Loja-virtual\\Loja-Virtual\\public\\index.php')
+INFO - 2024-02-06 22:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 22:55:46 --> Error: Call to undefined function validation_list_errors()
+in APPPATH\Views\registros\novoproduto.php on line 9.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('registros/novoproduto', [], true)
+ 4 APPPATH\Controllers\ProdutoController.php(17): view('registros/novoproduto')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProdutoController->new()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdutoController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\Loja-virtual\\Loja-Virtual\\public\\index.php')
+CRITICAL - 2024-02-06 22:57:52 --> Error: Call to undefined function set_value()
+in APPPATH\Views\registros\novoproduto.php on line 17.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('registros/novoproduto', [], true)
+ 4 APPPATH\Controllers\ProdutoController.php(17): view('registros/novoproduto')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProdutoController->new()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdutoController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\Loja-virtual\\Loja-Virtual\\public\\index.php')
+INFO - 2024-02-06 23:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-06 23:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 23:03:20 --> CodeIgniter\Validation\Exceptions\ValidationException: "" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('imagem', 'imagem', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(167): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 APPPATH\Controllers\ProdutoController.php(27): CodeIgniter\Controller->validateData([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProdutoController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdutoController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\Loja-virtual\\Loja-Virtual\\public\\index.php')
+INFO - 2024-02-06 23:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-06 23:04:15 --> Error: Call to undefined method CodeIgniter\View\View::endSectionsection()
+in APPPATH\Views\pages\sucesso.php on line 5.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/sucesso', [], true)
+ 4 APPPATH\Controllers\ProdutoController.php(46): view('pages/sucesso', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProdutoController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProdutoController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\Loja-virtual\\Loja-Virtual\\public\\index.php')
