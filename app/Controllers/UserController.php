@@ -13,14 +13,10 @@ class UserController extends BaseController
     }
 
     public function new(){
-        return view('layouts/header')
-                .view('registros/novousuario')
-                .view('layouts/footer');
+        return view('registros/novousuario');
     }
     public function login(){
-        return view('layouts/header')
-                .view('pages/login')
-                .view('layouts/footer');
+        return view('pages/login');
     }
 
     public function create(){

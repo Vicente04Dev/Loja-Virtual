@@ -1,3 +1,7 @@
+<?= $this->extend('master') ?>
+
+<?= $this->section('content') ?>
+
 <main class="flex-fill">
             <div class="container">
                 <h1>Informe seus dados, por favor</h1>
@@ -68,3 +72,4 @@
                 </form>
             </div>
 </main>
+<?= $this->endSection() ?>

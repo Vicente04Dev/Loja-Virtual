@@ -1,3 +1,6 @@
+<?= $this->extend('master') ?>
+
+<?= $this->section('content') ?>
 <main class="flex-fill">
             <div class="container">
                 <div class="row justify-content-center">
@@ -32,3 +35,4 @@
                 </div>
             </div>
         </main>
+<?= $this->endSection() ?>

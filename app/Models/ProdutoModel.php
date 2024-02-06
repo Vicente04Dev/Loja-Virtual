@@ -12,7 +12,7 @@ class ProdutoModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['nome', 'preco', 'descricao', 'estoque', 'imagem'];
 
     // Dates
     protected $useTimestamps = false;

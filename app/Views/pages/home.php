@@ -1,3 +1,8 @@
+<?= $this->extend('master') ?>
+
+<?= $this->section('content') ?>
+
+
 <div class="container">
             <div id="carouselMain" class="carousel slide carousel-dark" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -262,3 +267,4 @@
                 </div>
             </div>
         </main>
+        <?= $this->endSection(); ?>

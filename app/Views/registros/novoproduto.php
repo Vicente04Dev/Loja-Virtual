@@ -1,3 +1,7 @@
+<?= $this->extend('master') ?>
+
+<?= $this->section('content') ?>
+
 <main class="flex-fill">
             <div class="container">
                 <form class="mt-3" method="post" action="/novoproduto" enctype="multipart/form-data">
@@ -48,3 +52,4 @@
                 </form>
             </div>
 </main>
+<?= $this->endSection() ?>
