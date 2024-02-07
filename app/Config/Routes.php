@@ -9,8 +9,13 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
+//Chama a rota para cadastrar um novo usuário no sistema.
 $routes->get('newuser', [UserController::class, 'new']);
+
+//Chama a rota para o usuário entrar no sistema.
 $routes->get('login', 'UserController::login');
+
+//Chama a rota para cadastrar novos produtos no sistema.
 $routes->get('novoproduto', 'ProdutoController::new');
 
 //Posts

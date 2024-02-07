@@ -84,3 +84,17 @@ INFO - 2024-02-07 09:53:40 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-02-07 09:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-02-07 09:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-02-07 09:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-07 15:03:32 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\projects\Loja-virtual\Loja-Virtual\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\Loja-virtual\Loja-Virtual\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\projects\Loja-virtual\Loja-Virtual\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\projects\Loja-virtual\Loja-Virtual\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\projects\Loja-virtual\Loja-Virtual\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\projects\Loja-virtual\Loja-Virtual\app\Database\Migrations\2024-02-07-145237_User.php(35): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\projects\Loja-virtual\Loja-Virtual\system\Database\MigrationRunner.php(865): App\Database\Migrations\User->up()
+#6 C:\projects\Loja-virtual\Loja-Virtual\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\Loja-virtual\Loja-Virtual\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\Loja-virtual\Loja-Virtual\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\Loja-virtual\Loja-Virtual\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\Loja-virtual\Loja-Virtual\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}

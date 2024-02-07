@@ -12,6 +12,8 @@ class HomeModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
+
+    //Os campos que devem ser cadastrados no banco de dados
     protected $allowedFields    = ['nome', 'preco', 'estoque', 'descricao', 'slug', 'imagem'];
 
     // Dates
