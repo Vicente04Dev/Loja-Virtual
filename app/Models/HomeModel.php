@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ProdutoModel extends Model
+class HomeModel extends Model
 {
     protected $table            = 'produto';
     protected $primaryKey       = 'id';
@@ -12,7 +12,7 @@ class ProdutoModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nome', 'preco', 'descricao', 'estoque', 'imagem', 'slug'];
+    protected $allowedFields    = ['nome', 'preco', 'estoque', 'descricao', 'slug', 'imagem'];
 
     // Dates
     protected $useTimestamps = false;
@@ -37,4 +37,12 @@ class ProdutoModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function getProdutos($slug = false){
+        if($slug == false){
+            return $this->findAll();
+        }
+
+        return $this->where(['slug' => $slug])->first();
+    }
 }
