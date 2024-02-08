@@ -12,6 +12,7 @@ class User extends Seeder
         //
         $faker = Factory::create('pt_BR');
 
+        //Insere 20 dados na tabela users
         for($i = 1; $i <= 20; $i++){
             $data = [
                 'nome' => $faker->firstName(),
