@@ -24,7 +24,7 @@
                                     <label for="preco">Preço</label>
                                 </div>
                                 <div class="form-floating mb-3 col-md-6 col-xl-4">
-                                    <input class="form-control" name="estoque" type="number" id="estoque" placeholder=" " <?= set_value('estoque') ?>/>
+                                    <input class="form-control" name="estoque" type="number" id="estoque" placeholder=" " value="<?= set_value('estoque')?>"/>
                                     <label for="txtDataNascimento" class="d-inline d-sm-none d-md-inline d-lg-none">Estoque</label>
                                     <label for="estoque" class="d-none d-sm-inline d-md-none d-lg-inline">Estoque</label>
                                 </div>
@@ -35,8 +35,13 @@
                                     <label for="imagem">Imagem do produto</label>
                                 </div>
                                 <div class="form-floating mb-3 col-md-6">
-                                    <textarea class="form-control" placeholder=" " name="descricao" type="text" id="txtTelefone" value="<?= set_value('descricao') ?>"></textarea>
+                                    <textarea class="form-control" placeholder=" " name="descricao" type="text" id="txtTelefone"><?= set_value('descricao') ?></textarea>
                                     <label for="descricao">Descrição</label>
+                                </div>
+                                
+                                <div class="form-floating mb-3 col-md-8">
+                                    <input class="form-control" type="text" name="codigo" id="codigo" placeholder=" " value="<?= set_value('codigo') ?>"/>
+                                    <label for="codigo">Código do produto</label>
                                 </div>
                             </fieldset>
 

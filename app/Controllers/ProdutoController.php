@@ -33,7 +33,7 @@ class ProdutoController extends BaseController
         }
 
         //Seleciona todo os valores vindo do formulário
-        $data = $this->request->getPost(['nome', 'preco', 'estoque', 'descricao']);
+        $data = $this->request->getPost(['nome', 'preco', 'estoque', 'descricao', 'codigo']);
 
         //Verifica se os dados vindo do formulário correspondem a validação abaixo.
         if(!$this->validateData($data, [
@@ -41,6 +41,7 @@ class ProdutoController extends BaseController
             'preco' => 'required',
             'estoque' => 'required',
             'descricao' => 'required',
+            'codigo' => 'required',
         ])){
 
             //Os dados não são válidos, portanto, retorna novamente o formulário
@@ -58,6 +59,7 @@ class ProdutoController extends BaseController
             'imagem' => $fileName,
             'descricao' => $post['descricao'],
             'slug' => url_title($post['nome'], '-', true),
+            'codigo_produto' => $post['codigo'],
         ]);
 
         return view('pages/sucesso', $data);

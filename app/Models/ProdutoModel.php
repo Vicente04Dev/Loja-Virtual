@@ -14,7 +14,7 @@ class ProdutoModel extends Model
     protected $protectFields    = true;
 
     //Os campos que devem ser cadastrados no banco de dados
-    protected $allowedFields    = ['nome', 'preco', 'descricao', 'estoque', 'imagem', 'slug'];
+    protected $allowedFields    = ['nome', 'preco', 'descricao', 'estoque', 'imagem', 'slug', 'codigo_produto'];
 
     // Dates
     protected $useTimestamps = false;
