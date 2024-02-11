@@ -85,6 +85,7 @@
         <hr mt-3>
 
         <div class="row g-3">
+            <div id="mensagem"></div>
             <?php if (!empty($produtos) and is_array($produtos)): ?>
                 <?php foreach ($produtos as $produto): ?>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
@@ -119,11 +120,11 @@
                             <?php else: ?>
                                 <div class="card-footer">
                                     <form action="" class="form-submit">
-                                        <input type="hidden" class="pid" name="" value="<?= $produto['id']?>">
-                                        <input type="hidden" class="pnome" name="" value="<?= $produto['nome']?>">
-                                        <input type="hidden" class="ppreco" name="" value="<?= $produto['preco']?>">
-                                        <input type="hidden" class="pimagem" name="" value="<?= $produto['imagem'] ?>">
-                                        <input type="hidden" class="pcodigo" name="" value="<?= $produto['codigo_produto']?>">
+                                        <input type="hidden" class="pid" name="pid" value="<?= $produto['id']?>">
+                                        <input type="hidden" class="pnome" name="pnome" value="<?= $produto['nome']?>">
+                                        <input type="hidden" class="ppreco" name="ppreco" value="<?= $produto['preco']?>">
+                                        <input type="hidden" class="pimagem" name="pimagem" value="<?= $produto['imagem'] ?>">
+                                        <input type="hidden" class="pcodigo" name="pcodigo" value="<?= $produto['codigo_produto']?>">
                                         <button class="btn btn-danger mt-2 d-block addItemBtn">Adicionar ao carrinho</button>
                                     </form>
                                     <small class="text-success">
