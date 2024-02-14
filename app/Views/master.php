@@ -42,7 +42,7 @@
                             </li>
                             <li class="nav-item">
                                 <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0" id="cart-item">0</span>
-                                <a href="/carrinho.html" class="nav-link text-white">
+                                <a href="/carrinho" class="nav-link text-white">
                                     <i class="bi-cart" style="font-size:24px;line-height:24px;"></i>
                                 </a>
                             </li>
