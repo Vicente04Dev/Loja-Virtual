@@ -36,8 +36,9 @@ if(isset($_POST['pid'])){
         <strong>Este item já foi adicionado ao carrinho!</strong>
     </div>';
     }
+}
 
-    if(isset($_GET['cartItem'])){
+    if(isset($_GET['cartItem']) AND isset($_GET['cartItem']) == "cart_item"){
         $smtp = $connection->prepare("SELECT * FROM carrinho");
         $smtp->execute();
         $smtp->store_result();
@@ -45,4 +46,3 @@ if(isset($_POST['pid'])){
         $rows = $smtp->num_rows;
         echo $rows;
     }
-}

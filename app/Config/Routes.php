@@ -17,6 +17,7 @@ $routes->get('login', 'UserController::login');
 
 //Chama a rota para cadastrar novos produtos no sistema.
 $routes->get('novoproduto', 'ProdutoController::new');
+$routes->post('action', 'Action::index');
 
 //Posts
 $routes->post('novoproduto', [ProdutoController::class, 'create']);

@@ -16,8 +16,8 @@ $(document).ready(function() {
             url: 'php/action.php',
             method: 'post',
             data: {pid:pid, pnome:pnome, ppreco:ppreco, pimagem:pimagem, pcodigo:pcodigo},
-            success: function($response){
-                $('#mensagem').html($response);
+            success: function(response){
+                $('#mensagem').html(response);
                 window.scrollTo(0,0);
                 load_cart_item_number();
             }
@@ -31,7 +31,7 @@ $(document).ready(function() {
                 method: 'get',
                 data: {cartItem:"cart_item"},
                 success: function(response){
-                    $(".cart-item").html(response);
+                    $("#cart-item").html(response);
                 }
             })
         }
