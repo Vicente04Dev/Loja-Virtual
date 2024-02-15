@@ -10,11 +10,18 @@ class Action extends BaseController
     {
         //
         $db = \Config\Database::connect();
-        if(isset($_POST['pid'])){
-            $pcodigo = $_POST['pcodigo'];
-            $pnome = $_POST['pnome'];
-            $ppreco = $_POST['ppreco'];
-            $pimagem = $_POST['pimagem'];
+        $request = \Config\Services::Request();
+
+        if($request->isAJAX()){
+
+            $pid = $request->getVar('pid');
+
+            if(isset($pid)){
+
+            $pcodigo = $request->getVar('pcodigo');
+            $pnome = $request->getVar('pnome');
+            $ppreco = $request->getVar('ppreco');
+            $pimagem = $request->getVar('pimagem');
             $pquantidade = 1;
         
         
@@ -36,22 +43,18 @@ class Action extends BaseController
                     'codigo_produto' => $pcodigo
                 ]);
         
-                echo '<div class="alert alert-success alert-dismissible">
+                return '<div class="alert alert-success alert-dismissible">
                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                 <strong>Item adicionado ao carrinho!</strong>
             </div>';
             }else{
-                echo '<div class="alert alert-danger alert-dismissible">
+                return '<div class="alert alert-danger alert-dismissible">
                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                 <strong>Este item já foi adicionado ao carrinho!</strong>
             </div>';
             }
-        
-            if(isset($_GET['cartItem'])){
-                $smtp = $db->table('carrinho')->get();
-                $rows = $smtp->getNumRows();
-                echo $rows;
-            }
         }
+
     }
+}
 }

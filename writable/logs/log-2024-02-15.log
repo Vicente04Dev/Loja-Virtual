@@ -1,0 +1,10 @@
+CRITICAL - 2024-02-15 01:26:20 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\pages\carrinho.php on line 40.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/carrinho', [], true)
+ 3 APPPATH\Controllers\CarrinhoController.php(19): view('pages/carrinho', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CarrinhoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CarrinhoController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\Loja-virtual\\Loja-Virtual\\public\\index.php')

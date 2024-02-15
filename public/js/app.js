@@ -5,13 +5,13 @@ $(document).ready(function() {
         e.preventDefault();
         
         let $form = $(this).closest('.form-submit');
-
+        
         let pid = $form.find('.pid').val();
         let pnome = $form.find('.pnome').val();
         let ppreco = $form.find('.ppreco').val();
         let pimagem = $form.find('.pimagem').val();
         let pcodigo = $form.find('.pcodigo').val();
-
+        
         $.ajax({
             url: 'php/action.php',
             method: 'post',
@@ -22,9 +22,9 @@ $(document).ready(function() {
                 load_cart_item_number();
             }
         });
-
+        
         load_cart_item_number();
-
+        
         function load_cart_item_number(){
             $.ajax({
                 url: 'php/action.php',
